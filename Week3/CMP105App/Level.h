@@ -15,6 +15,9 @@ public:
 	void update(float dt);
 	void render();
 
+	void collision(sf::CircleShape&);
+	void collision2(sf::CircleShape&);
+
 private:
 	// Default functions for rendering to the screen.
 	void beginDraw();
@@ -23,4 +26,11 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+	sf::CircleShape circle_1;
+	sf::CircleShape circle_2;
+	sf::CircleShape circle_3;
+	float speed;
+	float speed2;
+	sf::Vector2f velocity;
 };
